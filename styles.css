@@ -59,6 +59,102 @@ body {
     width: 50px;
 }
 
+/* Cards */
+
+.cardBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  box-shadow: 2px 3px 2px 4px rgba(0,3,64,0.4);
+  background-color: rgba(250, 235, 215,0.7);
+}
+
+.card {
+  margin: 15px;
+  padding: 20px;
+  width: 380px;
+  height: 380px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px 1px gray;
+  transition: all ease-in-out 1s;
+  text-align: center;
+}
+
+.card:first-of-type h2 {
+  color: #ffffff;
+  opacity: 0;
+  transition: inherit;
+}
+
+.card:first-of-type:hover h2 {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+.card:first-of-type p {
+  color: #ffffff;
+  opacity: 0;
+  transition: inherit;
+  font-size: 18px;
+  text-shadow: 2px 2px 10px black;
+}
+
+.card:first-of-type:hover p {
+  transform: translateY(10px);
+  opacity: 1;
+}
+
+.card:first-of-type {
+  background-image: url("blockCity.jpg");
+  background-size: contain;
+}
+
+.card:first-of-type:hover {
+  filter: sepia();
+}
+
+.card:last-of-type {
+  background-image: url("cityNight.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.card:last-of-type > img{
+  width: 160px;
+  position: relative;
+  left: -160px;
+  bottom: -295px;
+  animation: mvCar 3s linear infinite;
+  animation-play-state: paused;
+  filter: grayscale(50%) blur(1px) drop-shadow(2px 10px 20px red) drop-shadow(140px 1px 60px yellow);
+}
+
+.card:last-of-type:hover > img {
+  animation-play-state: running;
+}
+
+.greetings {
+  background: linear-gradient(#c1dfc4, #deecdd);
+}
+
+@keyframes mvCar {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(calc(160px + 80px + 380px));
+  }
+}
+
+
+.card:last-of-type:hover {
+  transform: rotateZ(4deg);
+  background-position: center;
+}
+
 /* Outros */
 
 .floatingMenu {
@@ -76,26 +172,6 @@ body {
   max-height: 80vh;
   overflow-y: scroll;
   border: 1px solid black;
-}
-
-.cardBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    box-shadow: 2px 3px 2px 4px rgba(0,3,64,0.4);
-    background-color: rgba(250, 235, 215,0.7);
-}
-
-.card {
-    margin: 15px;
-    padding: 20px;
-    width: 380px;
-    height: 380px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    box-shadow: 1px 1px 3px 1px gray;
 }
 
 .lookingForJob {
