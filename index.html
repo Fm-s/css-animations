@@ -3,39 +3,33 @@
   <head>
     <title>No JS Page</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <!-- <script src="js.js"></script> -->
   </head>
   <body>
-    <div class="bubbles">
-      <div class="bubble">4</div>
-      <div class="bubble"></div>
-      <div class="bubble">1</div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble">2</div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble">3</div>
-      <div class="bubble"></div>
-    </div>
     <nav class="floatingMenu">
-      <div class="github"><img src="git-logo-white.png" alt="GitHub Logo" /></div>
-      <div class="linkedIn"><img src="linkedin-logo.png" alt="LinkedIn Logo" /></div>
+      <div class="github invertFilter">
+        <div>GitHub</div>
+        <img src="git-logo-white.png" alt="GitHub Logo" />
+      </div>
+      <div class="linkedIn invertFilter">
+        <div>LinkedIn</div>
+        <img src="linkedin-logo.png" alt="LinkedIn Logo" />
+      </div>
     </nav>
     <div class="containter">
       <div class="cardBox">
-        <div class="card">Ola sou uma card</div>
-        <div class="card">Ola sou uma card</div>
+        <div class="card">
+          <h2>Animations Config</h2>
+        </div>
         <div class="card">Ola sou uma card</div>
         <div class="card">Ola sou uma card</div>
       </div>
     </div>
     <footer>
-      <div class="lookingForJob">
-        <p>&#x2190 &#x2190 &#x2190 FullStack Junior Looking for First Job</p>
-      </div>
+      <input type="checkbox" checked id="walker" />
+      <label for="walker">Walking Guy</label>
       <div class="running">
         <img id="down3" alt="" src="sprites/down-stand.png" />
         <img id="right1" alt="" src="sprites/right-1.png" />
@@ -45,7 +39,26 @@
         <img id="left2" alt="" src="sprites/left-2.png" />
         <img id="left3" alt="" src="sprites/left-stand.png" />
       </div>
-      <div class="css2">
+      <div class="lookingForJob">
+        <p>Dev Looking for Job</p>
+      </div>
+      <input type="checkbox" checked id="bubbles" />
+      <label for="bubbles">Bubbles</label>
+      <div class="bubbles">
+        <div class="bubble">H</div>
+        <div class="bubble">E</div>
+        <div class="bubble">L</div>
+        <div class="bubble">L</div>
+        <div class="bubble">O</div>
+        <div class="bubble">W</div>
+        <div class="bubble">O</div>
+        <div class="bubble">R</div>
+        <div class="bubble">L</div>
+        <div class="bubble">D</div>
+      </div>
+      <input type="checkbox" checked id="cheesy" />
+      <label for="cheesy">Cheesy animated Text</label>
+      <div class="cheesyText">
         <span class="helloWorld lt1">C</span>
         <span class="helloWorld lt2">S</span>
         <span class="helloWorld lt3">S</span>
