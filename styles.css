@@ -2,12 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 
 /* Background  */
-.containter {
-  overflow: hidden;
+body {
   background: radial-gradient(circle, rgba(57,193,232,1) 0%, rgba(130,102,231,1) 13%, rgba(255,139,36,1) 52%);
   background-position: center;
   background-size: 300%;
   animation: bgMov 60s infinite linear;
+  overflow: hidden;
+}
+
+.containter {
+  width: 100%;
+  background: transparent;
 }
 
 @keyframes bgMov {
@@ -165,7 +170,7 @@
   gap: 30px;
 }
 
-.containter {
+.cardBoxWrapper {
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
