@@ -143,6 +143,22 @@ body {
 
 .greetings {
   background: linear-gradient(#f77062, #fe5196);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.greetings .en {
+  display: none;
+}
+
+.greetings #translate:checked ~ .br {
+  display: none;
+}
+
+.greetings #translate:checked ~ .en {
+  display: block;
 }
 
 @keyframes mvCar {
@@ -168,6 +184,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-bottom: 15px;
 }
 
 .cardBoxWrapper {
